@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	<style src="styles.css" type="text/css"></style>
+	<link rel="stylesheet" href="styles.css">
+	<title>ACSPopupTest</title>
+</head>
+<body>
+	
+	<div class="para">This ia  paragraph before the modal/popup. Click the buttons below to see pop-ups!</div>
+	<div class="modaldem">
+	  <div class="mainbox">
+			<div class="linebox">
+				<div class="mainback">
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="popup-container">
+					<div class="popup" id="popup1">
+						<span class="close-button" onclick="closePopup('popup1')">&times;</span>
+						<p>This is Popup 1.<br>1 is the loneliest number.</p>
+					</div>
+					<div class="popup" id="popup2">
+						<span class="close-button" onclick="closePopup('popup2')">&times;</span>
+						<p>This is Popup 2.<br>2 can be as bad as 1.</p>
+					</div>
+					<div class="popup" id="popup3">
+						<span class="close-button" onclick="closePopup('popup2')">&times;</span>
+						<p>This is Popup 3<br>3 is a crowd, but twice just as loud.</p>
+					</div>
+					<div class="popup" id="popup4">
+						<span class="close-button" onclick="closePopup('popup2')">&times;</span>
+						<p>This is Popup 4<br>4 for more, then we're out the door.</p>
+					</div>
+				<!-- Add more popups and buttons as needed -->
+				</div>
+
+				<div class="buttons">
+					<button onclick="openPopup('popup1')">Open Popup 1</button>
+					<button onclick="openPopup('popup2')">Open Popup 2</button>
+					<button onclick="openPopup('popup3')">Open Popup 3</button>
+					<button onclick="openPopup('popup4')">Open Popup 4</button>
+					<!-- Add more buttons as needed -->
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="para">
+	This is a paragraph after the modal/popup demonstration. It's more of a popup because it doesn't prohibit use of the page after opening.
+	</div>
+
+<script src="index.js" defer></script>
+</body>
+</html>
